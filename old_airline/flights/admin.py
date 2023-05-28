@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Flights, Airport, Passenger
+from .models import Flight, Airport, Passenger
 
 # Register your models here.
 class FlightAdmin(admin.ModelAdmin):
@@ -10,5 +10,5 @@ class PassengerAdmin(admin.ModelAdmin):
     filter_horizontal = ("flights",)
 
 admin.site.register(Airport)
-admin.site.register(Flights, FlightAdmin)
+admin.site.register(Flight, FlightAdmin)
 admin.site.register(Passenger, PassengerAdmin)
