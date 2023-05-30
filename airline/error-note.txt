@@ -1,0 +1,12 @@
+https://github.com/docker/compose/issues/7896
+
+thenexxuz-zz commented on Oct 29, 2020
+I have run into this exact issue. 
+I solved this by making sure that I run sudo systemctl start docker 
+and then running sudo docker-compose up
+
+Enable Systemd in WSL 2: https://stackoverflow.com/questions/65400999/enable-systemd-in-wsl-2
+https://stackoverflow.com/questions/52604068/using-wsl-ubuntu-app-system-has-not-been-booted-with-system-as-init-system-pi
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04?fbclid=IwAR2hVBd0Dfybhu7SDNeAm1F1NEAUbxO0RpQK7wzJiQW0zlcUEfXILDEtrbA
+
